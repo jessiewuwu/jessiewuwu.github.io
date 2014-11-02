@@ -1,0 +1,15 @@
+Blog Post Dos~!
+
+Kitchen vs. Table - Sheereef's Fireside Chat
+
+Sunday, Nov 2, 2014
+
+I currently work for a health care training vocational school as a career advisor but I also manage our marketing.When I was presenting new ideas to my CEO, I kept using DBC as a reference that my CEO ended up checking out the website herself and was so inspired by the positive message that DBC gives out, she wants to start coding also. It is active participation and videos like the one on DBC's website and  Sheereef's Fireside Chat that leave the viewer feeling like the school read your mind, your fears, doubts, and goals. It is transparent and honest with what you will be experiencing, but it's not like saying "Give me your money. You got yourself into this, fend for yourself!" like most training schools. I know I will struggle for a long time, but I also know they are there to help us.
+
+I did a lot of research (blogs, articles, Quora, Tumblr, contacted people on LinkedIn, info sessions, etc) on the various bootcamps in San Francisco because I was so nervous about embarking something like this. However, it wasn't until week 1's assignments did this nervousness turn into excitement. I don't expect to love everything about web development, but I am surprised how much I enjoyed the assignments that were given us. Time flew and not once did I get blurry-eyed and yawn with desperate boredom. Haha granted it is probably the easiest unit of the curriculum....
+
+This kind of fast-paced intensive learning is something I thrived on in college. I mean, I think I would have gained a lot more if I were the ideal student that my mom hoped for: went to class everyday, diligently took notes, participated in discussion, studied in advanced, and aced all my tests. But no. Nope. Noooooo thanks. Not me. Instead, I would cram two days before the exam, run on four hours or less of sleep, study my notes at every stoplight (dangerous), every bathroom break (ew), etc.
+
+I loved the adrenaline and sense of urging in cramming in college and I am curious to see how I will do at DBC. The only thing is... I watched Kara Cara (sp?), this DBC grad who loves to rap her reflections on Youtube and it left an impression that it is common for people to kinda break down, cry, doubt themselves, and be in this emotional roller coaster. That is the part that makes me nervous. Because I am a crier. I mean like, I won't cry in public and cause a fuss in public but that's not my thing, but I am the type who cries at home during sad puppy commercials and lonely grandmas who don't get any Hallmark cards during the holidays.........
+
+Whatever. As a wise woman and her posse said, "I'm a survivor (What?), I'm not gon give up (What?), I'm not gon stop (What?), I'm gon work harder (What?)" Thank you for the encouragement, Destiny's Child.
