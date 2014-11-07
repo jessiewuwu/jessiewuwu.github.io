@@ -1,0 +1,54 @@
+#left_column {
+  position: fixed;
+  float: left;
+  width: 100px
+}
+
+#left_column li {
+  display:inline;
+}
+
+#left_column ul li {
+  font-family: Helvetica;
+  font-size: 2em;
+  padding: 1px
+  margin: 15px;
+  display: block;
+}
+
+#middle_column {
+  width: 50%;
+  margin: 20px;
+  padding-left: 150px;
+  font-family: Helvetica;
+}
+
+.date {
+  font-style: italic;
+}
+
+#right_column {
+  float: right;
+  width: 20%;
+  padding-right: 5px;
+  font-family: Helvetica;
+  margin: 20px;
+}
+
+#right_column li {
+  display: block;
+  padding: 5px
+}
+
+a:hover {
+  background-color: lightpink;
+}
+
+a: visited {
+  color: lightblue;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
