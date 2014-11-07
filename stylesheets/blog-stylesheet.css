@@ -1,7 +1,7 @@
 #left_column {
   position: fixed;
   float: left;
-  width: 100px
+  width: 100px;
 }
 
 #left_column li {
@@ -17,14 +17,20 @@
 }
 
 #middle_column {
-  width: 50%;
+  float: left;
+  width: 60%;
   margin: 20px;
-  padding-left: 150px;
+  padding-left: 170px;
   font-family: Helvetica;
 }
 
 .date {
   font-style: italic;
+  font-size: 11px;
+}
+
+p {
+  font-size: 13px;
 }
 
 #right_column {
@@ -32,7 +38,7 @@
   width: 20%;
   padding-right: 5px;
   font-family: Helvetica;
-  margin: 20px;
+  margin: 10px;
 }
 
 #right_column li {
@@ -51,4 +57,5 @@ a: visited {
 a:link {
   text-decoration: none;
   color: black;
+  font-size: .75em;
 }
