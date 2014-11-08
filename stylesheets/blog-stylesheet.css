@@ -1,7 +1,10 @@
+
+
 #left_column {
   position: fixed;
   float: left;
   width: 100px;
+  font-family: "Questrial", Helvetica, sans-serif;
 }
 
 #left_column li {
@@ -9,7 +12,6 @@
 }
 
 #left_column ul li {
-  font-family: Helvetica;
   font-size: 2em;
   padding: 1px
   margin: 15px;
@@ -21,23 +23,27 @@
   width: 60%;
   margin: 20px;
   padding-left: 170px;
-  font-family: Helvetica;
+  font-family: "Questrial", Helvetica, sans-serif;
 }
 
+h1 {
+  color: #6699cc;
+}
 .date {
   font-style: italic;
   font-size: 11px;
+  color: #efb146;
 }
 
 p {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 #right_column {
   float: right;
   width: 20%;
   padding-right: 5px;
-  font-family: Helvetica;
+  font-family: "Questrial", Helvetica, sans-serif;
   margin: 10px;
 }
 
@@ -47,11 +53,13 @@ p {
 }
 
 a:hover {
-  background-color: lightpink;
+  background-color: #cae5ff;
+  color: #efb146;
 }
 
 a: visited {
-  color: lightblue;
+  color: #cae5ff;
+
 }
 
 a:link {
