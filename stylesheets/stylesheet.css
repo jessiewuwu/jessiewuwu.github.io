@@ -1,0 +1,40 @@
+
+body {
+  font-family: "Questrial", Helvetica, sans-serif;
+}
+
+#logo {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+#header {
+  width: 100%;
+  height: 17px;
+  background-color: #dcdcdc;
+  text-align: center;
+  position: relative;
+}
+#header li{
+  display: inline;
+}
+
+#summary {
+  text-align: center;
+  padding: 80px;
+  margin: 30px 300px 30px 300px;
+}
+
+a:hover {
+  background-color: #cae5ff;
+  color: #efb146;
+}
+
+a: visited {
+  color: #cae5ff;
+}
+
+a:link {
+  text-decoration: none;
+}
