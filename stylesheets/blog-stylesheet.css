@@ -34,7 +34,9 @@ html {
 
 h1 {
   color: #6699cc;
+  font-weight: bolder;
 }
+
 .date {
   font-style: italic;
   font-size: 11px;

@@ -57,3 +57,11 @@ a:link {
 a {
   color: #5B6166;
 }
+
+h1 {
+  color: #5B6166;
+}
+
+#blogposts {
+  padding: 50px 90px 50px 90px;
+}
