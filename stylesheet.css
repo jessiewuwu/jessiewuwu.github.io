@@ -32,6 +32,8 @@ body {
   height: 30px;
   background-color: #efb146;
   font-size: 13px;
+  position: absolute;
+  bottom: 0px;
 }
 
 #footer li {
@@ -64,4 +66,18 @@ h1 {
 
 #blogposts {
   padding: 50px 90px 50px 90px;
+}
+
+.largefont {
+  font-family: "Questrial", Helvetica, sans-serif;
+  font-size: 80px;
+  padding-left: 95px;
+  padding-top: 60px
+  padding-bottom: 60px;
+}
+
+#aboutme {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
 }
