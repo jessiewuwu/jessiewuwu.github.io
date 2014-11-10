@@ -74,3 +74,15 @@ a:link {
   color: black;
   font-size: .75em;
 }
+
+img.photo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.logopic {
+  width: 75px;
+  padding-bottom: 80px;
+  padding-top: 20px;
+}
