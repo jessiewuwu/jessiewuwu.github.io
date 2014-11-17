@@ -48,10 +48,6 @@ li.copyright {
   bottom: -10px;
 }
 
-#blogposts a {
-  font-size: 25px;
-}
-
 }
 a:hover {
   background-color: #cae5ff;
@@ -76,6 +72,7 @@ h1 {
 
 #blogposts {
   padding: 50px 90px 50px 90px;
+  font-size: 25px;
 }
 
 .largefont {
