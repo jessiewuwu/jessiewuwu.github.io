@@ -42,6 +42,12 @@ body {
 
 .socialicons {
   float: right;
+
+li.copyright {
+  position: relative;
+  bottom: -10px;
+}
+
 }
 a:hover {
   background-color: #cae5ff;
@@ -70,7 +76,7 @@ h1 {
 
 .largefont {
   font-family: "Questrial", Helvetica, sans-serif;
-  font-size: 100px;
+  font-size: 150px;
   padding-left: 95px;
   padding-top: 60px
   padding-bottom: 60px;
