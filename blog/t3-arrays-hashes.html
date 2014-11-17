@@ -94,13 +94,13 @@
 
     <h3>Locating Something In A Hash</h3>
     <p>Let's say you want to get me the Pug Pillow, but you don't know want to look at the long, extensive wishList, you just want to know where to buy it. You can search for the value for the key Pug Pillow with:</p>
-    <p class="codetext">wishList["Pug Pillow"] ==> "ModCloth.com"</p>
+    <p class="codetext">wishList["Pug Pillow"] => "ModCloth.com"</p>
     <p>You can also search for the key by its value. So, if you're online at Toms.com and you can't remember which kind of shoes I wanted, you can find it in Ruby with <span class="courier">.key</span>:</p>
     <p class="codetext">wishList.key("Toms.com") => "Toms brogue shoes"</p>
 
     <h3>Delete A Key, Value Pair From Hash</h3>
     <p>I changed my mind again. I think I do want Baby the Dog, not that lame wannabe-dog pillow. Baby is relatively low maintenance, she sleeps a lot anyways. To delete the Pug Pillow, you can use <span class="courier">.delete</span>:</p>
-    <p class="codetext">wishList.delete("Pug Pillow") => "ModCloth.com"<br>
+    <p class="codetext">wishList.delete("Pug Pillow") <br>
     wishList => {"Net subscription"=>"CreativeBloq.com", "Toms brogue shoes" => "Toms.com"}</p>
 
     <h3>Add a Key, Value Pair Into Hash</h3>
