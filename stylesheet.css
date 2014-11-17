@@ -48,6 +48,10 @@ li.copyright {
   bottom: -10px;
 }
 
+#blogposts a {
+  font-size: 25px;
+}
+
 }
 a:hover {
   background-color: #cae5ff;
