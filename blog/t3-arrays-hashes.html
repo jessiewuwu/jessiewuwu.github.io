@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css" />
+   <link href="http://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" type="text/css" />
+
+  <title>Jessie's Blog</title>
+</head>
+<body>
+
+  <div id="left_column">
+  <ul>
+    <a href="http://jessiewuwu.github.io/"><img class="logopic" src="../imgs/jessielogo.png" /></a>
+    <li><a href="http://jessiewuwu.github.io/">home</a></li>
+    <li><a href="#">about</a></li>
+    <li><a href="https://jessiewuwu.github.io/blog/index.html">archive</a></li>
+    <li><a href="mailto:jwu004@gmail.com">contact</a></li>
+  </ul>
+  </div>
+
+  <div id="middle_column">
+    <h1>Arrays + Hashes</h1>
+    <p class="date">Sunday, November 16, 2014</p>
+<!--
+  I. Intro
+  II. Array
+    a. Comparsion: Christmas List - (1) Baby the Dog, (2) annual subscription to Net magazine, (3) Toms // the order of desire
+    b) code - how to create an array
+    c) code - how to get a specific element
+    d) code - how to delete (baby the dog)
+    e) code - how to add (pug pillow)
+  III. Hash
+    a. Comparison: key = gift, value = store
+    b. code - how to create a hash
+    c. code - how to get a specific element
+    d. code - how to delete (pug pillow)
+    e. code - how to add (baby the dog)
+  IV. Conclusion
+-->
+
+    <p>Week 3 covered Ruby basics and two things we picked up were arrays and hashes. You can think of them as lists. Since Christmas is coming, let's think about people's wishlists, in particular mine.</p>
+
+    <h2>Array</h2>
+    <p>An array is an ordered list of objects. Objects can be strings (names, book titles, etc), integers (prices, quantity, etc), and arrays (more lists), among other things. Let's say I want to make a Wish List for my birthday, which also happens to be on Christmas (yeah... I always get only one present, not two). Naturally, I would put the things I want the most on top.
+
+    <p><ol>
+      <li> Baby the Dog (who I fostered this weekend!)</li>
+      <li> Annual subscription to Net magazine</li>
+      <li> Toms brogue shoes</li>
+    </ol></p>
+
+    <img src= "../imgs/babythedog.jpg" width="400px" />
+    <img src = "../imgs/netmagazine.jpg" height="200px" />
+    <img src = "../imgs/toms.jpg" height="200px" />
+
+    <p>Now, putting on our Ruby hat, let's make this into an array called wishList and enter the items that I hope others will buy for me.</p>
+
+    <h3>Create An Array</h3>
+    <p>You can create an array with <span class="courier">Array.new</span> and/or type out all the elements in the array:</p>
+    <p class="codetext">
+      wishList = Array.new <br>
+      wishList = ["Baby the Dog", "Net subscription", "Toms shoes"] </p>
+
+    <h3>Locating Something In An Array</h3>
+     <p>In Ruby, instead of starting the list with 1, 2, 3, arrays actually start at index 0 and then 1, 2, 3. So technically index 1 is the second thing on the list (Net subscription). See below in code speak:</p>
+
+    <p class="codetext">wishList[0] => "Baby the Dog" <br>
+      wishList[1] => "Net subscription" <br>
+      wishList[2] => "Tom brogue shoes"</p>
+
+    <h3>Delete An Element From Array</h3>
+    <p>Okay, so I changed my mind about Baby being my #1 most desired gift. I am a student after all...and Baby is 10 years old so I don't think it's a good idea to take on DBC <em>and</em> a senior dog. Let's take off her of the list with <span class="courier">.delete method</span>.</p>
+    <p class="codetext">wishList.delete("Baby the Dog") <br>
+    wishList => ["Net subscription", "Toms brogue shoes"]</p>
+
+    <h3>Add An Element Into Array</h3>
+    <p>My list is so small now. What if more than two people want to buy me things? If I can't have Baby, then a dog pillow will suffice. </p>
+    <center><img src="../imgs/pugpillow.png" height=200px /></center>
+    <p>There are several ways to add an element:<span class="courier"> .push, &lt;&lt;, .unshift, .insert</span>. Let's use <span class="courier">.push</span> as an example:
+    <p class="codetext">wishList.push("Pug Pillow") => <br>["Net subscription", "Toms brogue shoes", "Pug Pillow"]</p>
+
+    <p>With <span class="courier">.push</span>, it puts the Pug Pillow at the very end. What if I want the Pug Pillow more than the Toms brogue shoes? In this case, instead of using <span class="courier">.push</span>, you can use <span class="courier">.insert(index#, 'item')</span>:
+    <p class="codetext">wishList.insert(1, "Pug Pillow") => <br>["Net subscription", "Pug Pillow", "Toms brogue shoes"]</p>
+
+    <p>Okay, now you know the fundamentals of creating an array!</p>
+
+    <h2>Hash</h2>
+    <p>Hashes are similar to arrays in the sense that they are also a list. Whereas you can grab things from the array by the index number, with hashes you have keys and their associated values. For example, I can create my wishList of <em>what</em> I want and <em>where</em> you can purchase them. How convenient! This should make it easier for my gift-buyers, present-givers to shower me with well-deserved, long-awaited presents.</p>
+
+    <h3>Create A Hash</h3>
+    <p>Arrays have [] brackets, hashes have {} curly braces. Similar to creating an array, you can either start with <span class="courier">wishList = Hash.new </span> and then add the elements in wishList or have the name equal the elements in the array, like below:</p>
+    <p class="codetext">wishList= {"Net subscription"=>"CreativeBloq.com", "Toms brogue shoes"=>"Toms.com", "Pug Pillow"=>"ModCloth.com"}</p>
+    <p>So, you see here that my Net subscription is the key and CreativeBloq.com is my value, and so on.</p>
+
+    <h3>Locating Something In A Hash</h3>
+    <p>Let's say you want to get me the Pug Pillow, but you don't know want to look at the long, extensive wishList, you just want to know where to buy it. You can search for the value for the key Pug Pillow with:</p>
+    <p class="codetext">wishList["Pug Pillow"] ==> "ModCloth.com"</p>
+    <p>You can also search for the key by its value. So, if you're online at Toms.com and you can't remember which kind of shoes I wanted, you can find it in Ruby with <span class="courier">.key</span>:</p>
+    <p class="codetext">wishList.key("Toms.com") => "Toms brogue shoes"</p>
+
+    <h3>Delete A Key, Value Pair From Hash</h3>
+    <p>I changed my mind again. I think I do want Baby the Dog, not that lame wannabe-dog pillow. Baby is relatively low maintenance, she sleeps a lot anyways. To delete the Pug Pillow, you can use <span class="courier">.delete</span>:</p>
+    <p class="codetext">wishList.delete("Pug Pillow") => "ModCloth.com"<br>
+    wishList => {"Net subscription"=>"CreativeBloq.com", "Toms brogue shoes" => "Toms.com"}</p>
+
+    <h3>Add a Key, Value Pair Into Hash</h3>
+    <p>Now it's time to add Baby the Dog back with <span class="courier">.store</span>:</p>
+    <p class="codetext">wishList.store("Baby the Cutest, Best Pekingese Dog Ever", "NorCal Family Dog Rescue")<br>
+    wishList =>  {"Net subscription"=>"CreativeBloq.com", "Toms brogue shoes" => "Toms.com", "Baby the Cutest, Best Pekingese Dog Ever" =>"NorCal Family Dog Rescue"}</p><br><br>
+<p>That's it! That's array and hash in Ruby for you. Now go make your Wish List and send it to a programmer friend to figure it out, because your non-programming friends sure as hell won't. And go adopt Baby the Dog! She's old, a little smelly, has eye boogers, but her little tongue is always protruding out!</p>
+<center> <img src="../imgs/babyderp.jpg" width=500px/></center>
+
+  </div>
+
+  <div id="right_column">
+  <ul>
+       <li><a href="https://www.facebook.com/jessiewu123"> <img src="../imgs/facebookicon.png"/> </a> </li>
+    <li><a href="https://www.linkedin.com/in/wujessie"> <img src="../imgs/linkedinicon.png"/></a> </li>
+    <li><a href="https://twitter.com/jessie__wu"> <img src="../imgs/twittericon.png"/></a> </li>
+    <li><a href="https://github.com/jessiewuwu"> <img src="../imgs/github.png"/></a> </li>
+
+  </ul>
+  </div>
+
+
+
+</body>
+</html>

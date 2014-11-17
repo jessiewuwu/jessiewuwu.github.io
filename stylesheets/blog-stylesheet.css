@@ -88,3 +88,26 @@ img.logopic {
   padding-bottom: 80px;
   padding-top: 20px;
 }
+
+h2 {
+  color: #efb146;
+  font-weight: bolder;
+}
+
+h3 {
+  color: #efb146;
+  font-weight: bolder;
+}
+.codetext {
+  font-family: Courier; serif;
+  color: #5B6166;
+  background-color: #E0E7EC;
+  font-size: 14px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 2px;
+}
+
+.courier {
+  font-family: Courier;
+}
