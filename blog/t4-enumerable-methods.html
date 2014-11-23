@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css" />
+   <link href="http://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" type="text/css" />
+
+  <title>Jessie's Blog</title>
+</head>
+<body>
+
+  <div id="left_column">
+  <ul>
+    <a href="http://jessiewuwu.github.io/"><img class="logopic" src="../imgs/jessielogo.png" /></a>
+    <li><a href="http://jessiewuwu.github.io/">home</a></li>
+    <li><a href="#">about</a></li>
+    <li><a href="https://jessiewuwu.github.io/blog/index.html">archive</a></li>
+    <li><a href="mailto:jwu004@gmail.com">contact</a></li>
+  </ul>
+  </div>
+
+  <div id="middle_column">
+    <h1>Enumerable: .each vs .map vs. .map! </h1>
+    <p class="date">Saturday, November 22, 2014</p>
+    <!--
+      I. Intro - what is enumerable?
+      II. .each - nothing happens to the array
+      III. .map - it returns the new object with changes but doesn't change the array because there is a copy
+      IV. .map! - it prints and modifies the original array
+      V. conclusion -->
+
+      <h3>Quick Intro to Enumberables</h3>
+      <p>According to Ruby-doc (my favorite reference source.......):</p>
+      <p class="codetext"> The Enumerable mixin provides collection classes with several traversal and searching methods, and with the ability to sort.</p>
+      <p>Wut. Basically, enumberables allow us to take elements from collections (arrays, hashes, etc) one at a time. We can do certain things to each one of them. Depending on what we do, we may have new results or the same old original results. </p>
+      <p>Let's use these three enumerators to illustrate how enumberable methods work: <span class="courier">.each</span>, <span class="courier">.map</span>, and <span class="courier">.map!</span>, along with an array called <span class="courier">not_fun</span>. Inside not_fun are three activities, <em>strings</em> to be exact.</p>
+      <p class="codetext"> &gt; not_fun = ["washing dishes", "dieting", "doing paperwork"] <br>
+        => ["washing dishes", "dieting", "doing paperwork"]</p>
+
+
+      <h3>.each </h3>
+      <p><span class="courier">.each</span> method allows you to go through the block of code for each element (in this case, our activity strings) of the array, but it returns the original object (the <span class="courier">no_fun</span> array).</p>
+      <p class="codetext"> &gt; not_fun.each {|activity| activity.capitalize + " is so fun...not."} <br>
+        => ["washing dishes", "dieting", "doing paperwork"]</p>
+      <p>With <span class="courier">.each</span>, we capitalize each activity and form a sentence. However, you will see that it returned the original array without capitalization or the rest of the sentence. The reason why is <span class="courier">.each</span> doesn't modify the array. Also you don't see "Washing dishes is so fun...not" because we didn't put <span class="courier">puts</span> in the block of code. But don't worry about that because <span class="courier">puts</span>,<span class="courier"> return</span>, <span class="courier"> p</span>, and <span class="courier">print</span>s are a whole different beast to mess with.</p>
+
+      <h3>.map</h3>
+      <p><span class="courier">.map</span> method returns the new object with changes but it doesn't change the original array. Basically it's kind of like this kid using a protector sheet to draw over the original worksheet with a whiteboard marker.</p>
+      <center><img src="http://2.bp.blogspot.com/-GE4fDC_uLR4/U2B2W6v5ZYI/AAAAAAAAFfk/OVYOcQkHDTs/s1600/Parallel+Line+Drawings+%2810%29.jpg" width="400px" /></center>
+      <p>However, in the end you can still pull the original worksheet from the protector sheet and it's as if his chubby crooked-line-drawing hands never touched it. Or something, kind of like that.... let's see with actual Ruby.</p>
+      <p class="codetext"> &gt; not_fun.map {|activity| activity.capitalize + " is so fun...not."} <br>
+      => ["Washing dishes is so fun...not.", "Dieting is so fun...not.", "Doing paperwork is so fun...not."] </p>
+      <p>Here you see that with <span class="courier">.map</span>, it returns a modified array where the activity is capitalized and in a complete sentence for each activity. However, if you run the array again, you will see it returned the original array without capitalization and sentence:</p>
+      <p class="codetext">&gt; not_fun
+      <br>=> ["washing dishes", "dieting", "doing paperwork"]</p>
+
+      <h3>.map!</h3>
+      <p><span class="courier">.map!</span> has an ! attached to it, making it a "destructive" version of <span class="courier">.map</span>. Destructive means it will modify and replace the original object with the changes done to each element.
+      <p class="codetext"> &gt; not_fun.map! {|activity| activity.capitalize + " is so fun...not."} <br>
+            => ["Washing dishes is so fun...not.", "Dieting is so fun...not.", "Doing paperwork is so fun...not."] </p>
+      <p>When you run the <span class="courier">not_fun</span> array, you will see it has changed into a new array:</p>
+      <p class="codetext"> &gt; not_fun <br>
+        => ["Washing dishes is so fun...not.", "Dieting is so fun...not.", "Doing paperwork is so fun...not."] </p>
+
+      <h3>...and there you have it! </h3>
+
+
+  </div>
+
+  <div id="right_column">
+  <ul>
+       <li><a href="https://www.facebook.com/jessiewu123"> <img src="../imgs/facebookicon.png"/> </a> </li>
+    <li><a href="https://www.linkedin.com/in/wujessie"> <img src="../imgs/linkedinicon.png"/></a> </li>
+    <li><a href="https://twitter.com/jessie__wu"> <img src="../imgs/twittericon.png"/></a> </li>
+    <li><a href="https://github.com/jessiewuwu"> <img src="../imgs/github.png"/></a> </li>
+
+  </ul>
+  </div>
+
+
+
+</body>
+</html>
