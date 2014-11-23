@@ -32,7 +32,7 @@
       <p>According to Ruby-doc (my favorite reference source.......):</p>
       <p class="codetext"> The Enumerable mixin provides collection classes with several traversal and searching methods, and with the ability to sort.</p>
       <p>Wut. Basically, enumberables allow us to take elements from collections (arrays, hashes, etc) one at a time. We can do certain things to each one of them. Depending on what we do, we may have new results or the same old original results. </p>
-      <p>Let's use these three enumerators to illustrate how enumberable methods work: <span class="courier">.each</span>, <span class="courier">.map</span>, and <span class="courier">.map!</span>, along with an array called <span class="courier">not_fun</span>. Inside not_fun are three activities, <em>strings</em> to be exact.</p>
+      <p>Let's use these three enumerators to illustrate how enumberable methods work: <span class="courier">.each</span>, <span class="courier">.map</span>, and <span class="courier">.map!</span>, along with an array called <span class="courier">not_fun</span>. Inside <span class="courier">not_fun</span> are three activities, <em>strings</em> to be exact:</p>
       <p class="codetext"> &gt; not_fun = ["washing dishes", "dieting", "doing paperwork"] <br>
         => ["washing dishes", "dieting", "doing paperwork"]</p>
 
@@ -40,6 +40,8 @@
       <h3>.each </h3>
       <p><span class="courier">.each</span> method allows you to go through the block of code for each element (in this case, our activity strings) of the array, but it returns the original object (the <span class="courier">no_fun</span> array).</p>
       <p class="codetext"> &gt; not_fun.each {|activity| activity.capitalize + " is so fun...not."} <br>
+        => ["washing dishes", "dieting", "doing paperwork"]<br>
+        &gt; > not_fun <br>
         => ["washing dishes", "dieting", "doing paperwork"]</p>
       <p>With <span class="courier">.each</span>, we capitalize each activity and form a sentence. However, you will see that it returned the original array without capitalization or the rest of the sentence. The reason why is <span class="courier">.each</span> doesn't modify the array. Also you don't see "Washing dishes is so fun...not" because we didn't put <span class="courier">puts</span> in the block of code. But don't worry about that because <span class="courier">puts</span>,<span class="courier"> return</span>, <span class="courier"> p</span>, and <span class="courier">print</span>s are a whole different beast to mess with.</p>
 
