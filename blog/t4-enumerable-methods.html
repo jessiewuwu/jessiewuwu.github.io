@@ -41,14 +41,14 @@
       <p><span class="courier">.each</span> method allows you to go through the block of code for each element (in this case, our activity strings) of the array, but it returns the original object (the <span class="courier">no_fun</span> array).</p>
       <p class="codetext"> &gt; not_fun.each {|activity| activity.capitalize + " is so fun...not."} <br>
         => ["washing dishes", "dieting", "doing paperwork"]<br>
-        &gt; > not_fun <br>
+        &gt; not_fun <br>
         => ["washing dishes", "dieting", "doing paperwork"]</p>
       <p>With <span class="courier">.each</span>, we capitalize each activity and form a sentence. However, you will see that it returned the original array without capitalization or the rest of the sentence. The reason why is <span class="courier">.each</span> doesn't modify the array. Also you don't see "Washing dishes is so fun...not" because we didn't put <span class="courier">puts</span> in the block of code. But don't worry about that because <span class="courier">puts</span>,<span class="courier"> return</span>, <span class="courier"> p</span>, and <span class="courier">print</span>s are a whole different beast to mess with.</p>
 
       <h3>.map</h3>
       <p><span class="courier">.map</span> method returns the new object with changes but it doesn't change the original array. Basically it's kind of like this kid using a protector sheet to draw over the original worksheet with a whiteboard marker.</p>
       <center><img src="http://2.bp.blogspot.com/-GE4fDC_uLR4/U2B2W6v5ZYI/AAAAAAAAFfk/OVYOcQkHDTs/s1600/Parallel+Line+Drawings+%2810%29.jpg" width="400px" /></center>
-      <p>However, in the end you can still pull the original worksheet from the protector sheet and it's as if his chubby crooked-line-drawing hands never touched it. Or something, kind of like that.... let's see with actual Ruby.</p>
+      <p>However, in the end you can still pull the original worksheet from the protector sheet and it's as if his chubby crooked-line-drawing hands have never touched it. Or something, kind of like that.... let's see with actual Ruby.</p>
       <p class="codetext"> &gt; not_fun.map {|activity| activity.capitalize + " is so fun...not."} <br>
       => ["Washing dishes is so fun...not.", "Dieting is so fun...not.", "Doing paperwork is so fun...not."] </p>
       <p>Here you see that with <span class="courier">.map</span>, it returns a modified array where the activity is capitalized and in a complete sentence for each activity. However, if you run the array again, you will see it returned the original array without capitalization and sentence:</p>
