@@ -45,6 +45,8 @@ h1 {
 
 p {
   font-size: 18px;
+  width: 1050px;
+  text-align: justify;
 }
 
 #right_column {
