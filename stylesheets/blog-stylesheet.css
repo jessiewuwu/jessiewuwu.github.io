@@ -26,8 +26,8 @@ html {
 
 #middle_column {
   float: left;
-  width: 60%;
-  margin: 20px;
+  width: 70%;
+  margin: 10px;
   padding-left: 170px;
   font-family: "Questrial", Helvetica, sans-serif;
 }
@@ -49,8 +49,8 @@ p {
 
 #right_column {
   float: right;
-  width: 15%;
-  padding-right: 5px;
+  width: 7%;
+  /* padding-right: 5px; */
   font-family: "Questrial", Helvetica, sans-serif;
   margin: 10px;
 }
