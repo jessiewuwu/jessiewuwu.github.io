@@ -47,6 +47,7 @@ p {
   font-size: 18px;
   width: 1050px;
   text-align: justify;
+  margin-top: 5px;
 }
 
 #right_column {
@@ -99,6 +100,8 @@ h2 {
 h3 {
   color: #efb146;
   font-weight: bolder;
+  margin-bottom: 5px;
+  margin-top: 30px;
 }
 .codetext {
   font-family: Courier; serif;
