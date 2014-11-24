@@ -20,6 +20,7 @@ html {
 #left_column ul li {
   font-size: 2em;
   padding: 1px
+  padding-bottom: 30px;
   margin: 15px;
   display: block;
 }
@@ -29,6 +30,7 @@ html {
   width: 70%;
   margin: 10px;
   padding-left: 150px;
+  padding-bottom: 30px;
   font-family: "Questrial", Helvetica, sans-serif;
 }
 
