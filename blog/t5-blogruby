@@ -1,0 +1,21 @@
+class Meal
+    def initialize(texture, spice)
+      @texture = texture
+      @spice = spice
+    end
+
+    def breakfast
+      puts "I want to eat #{@texture} chicken with a side of #{@spice} fried potatos."
+      puts "Hurry up, I don't have all day here!"
+    end
+
+    def lunch
+      puts "I'm craving #{@texture} chicken salad with #{@spice} tortilla soup."
+      puts "You are the sweetest little thing, aren't you!"
+    end
+
+    def dinner
+      puts "Tonight I will have #{@texture} chicken with some #{@spice} veggie fried rice."
+      "puts "Well?? What are you waiting for? Go get it!"
+    end
+end
