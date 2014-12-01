@@ -5,15 +5,15 @@ class DiningRoom
     end
 
     def breakfast
-      puts "I want to eat #{@texture} chicken with waffles and a side of fried potatos, #{@spice} ."
+      print "I want to eat #{@texture} chicken with waffles and a side of fried potatos, #{@spice}. "
     end
 
     def lunch
-      puts "I'm craving #{@texture} chicken salad with tortilla soup, #{@spice}."
+      print "I'm craving #{@texture} chicken salad with tortilla soup, #{@spice}. "
     end
 
     def dinner
-      puts "Tonight I will have #{@texture} chicken with some veggie fried rice, #{@spice} ."
+      print "Tonight I will have #{@texture} chicken with some veggie fried rice, #{@spice}. "
     end
 end
 
@@ -26,9 +26,9 @@ puts esther.dinner
 puts "Well?? What are you waiting for? I'm hungry!"
 
 theodore = DiningRoom.new("grilled", "very spicy, like 1 to 5 (5 being the hottest), level 6 spicy")
-puts theodore.breakfast
+print theodore.breakfast
 puts "Thanks sweetheart, and grab me a bottle of that Tabasco, why dontcha."
-puts theodore.lunch
+print  theodore.lunch
 puts "Don't forget about the Taptio hot sauce!"
 puts theodore.dinner
 puts "You know to bring extra sriracha right?"

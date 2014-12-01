@@ -22,11 +22,11 @@
     <h1>Class and Instance Variables in Ruby </h1>
     <p class="date">Sunday, November 30, 2014</p>
 
-    <p>In Ruby, creating a class allows you to apply methods to an object created by the class. Each time an object is created, it will do the same thing as the other objects with something called the instance method. For example, let's pretend that you are running a senior home where all three meals are provided and served to the elders living there. You can create a class Dining Room that looks at what each senior will want for their breakfast, lunch, and dinner prepared based on their preferences. </p>
-    <p>So in this case, the object will be the senior for the class Meal with instance methods of breakfast, lunch, and dinner that takes in arguments of how they like their chicken prepared and spice level preference.</p>
+    <p>In Ruby, creating a class allows you to apply methods to an object created by the class. Each time an object is created, it will do the same thing as the other objects with something called the instance method. For example, let's pretend that you are running a senior home where all three meals are provided and served to the elders living there. You can create a class DiningRoomPlan that looks at what each senior will want for their breakfast, lunch, and dinner prepared based on their preferences. </p>
+    <p>So in this case, the object will be the senior for the class DiningRoomPlan with instance methods of breakfast, lunch, and dinner that takes in arguments of how they like their chicken prepared (texture) and spice level preference (spice).</p>
 
     <pre><code>
-class DiningRoom
+class DiningRoomPlan
     def initialize(texture, spice)
       @texture = texture
       @spice = spice
@@ -55,18 +55,18 @@ puts esther.dinner
 puts "Well?? What are you waiting for? I'm hungry!"</code></pre>
 
 
-<p>You can see that texture and spice are now instance variables (denoted with @ before their name) so that we can use it for not only breakfast method, but all the methods in the class. Instance variables allow us to expect information from the arguments every time an object (the person) is created. It means that every time we add a person to Dining Room class, the computer will spit out their preferences so that you can prepare their meals accordingly.</p>
+<p>You can see that texture and spice are now instance variables (denoted with @ before their name) so that we can use it for not only breakfast method, but all the methods in the class. Instance variables allow us to expect information from the arguments every time an object (the person) is created. It means that every time we add a person to DiningRoomPlan class, the computer will spit out their preferences so that you can prepare their meals accordingly.</p>
 
 <p>We call the method breakast on esther to see what she'd want for breakfast.</p>
 <pre><code>
-=>I want to eat extra crispy deep fried chicken with a side of fried potatos, a little bit spicy .
-=>Hurry up, I don't have all day here!
+=> I want to eat extra crispy deep fried chicken with a side of fried potatos, a little bit spicy.
+=> Hurry up, I don't have all day here!
 
-=>I'm craving extra crispy deep fried chicken salad with tortilla soup, a little bit spicy.
-=>Are you tone-deaf? Do I have to repeat myself? Go get it!
+=> I'm craving extra crispy deep fried chicken salad with tortilla soup, a little bit spicy.
+=> Are you tone-deaf? Go get it!
 
-=>Tonight I will have extra crispy deep fried chicken with some veggie fried rice, a little bit spicy .
-=>Well?? What are you waiting for? I'm hungry!
+=> Tonight I will have extra crispy deep fried chicken with some veggie fried rice, a little bit spicy .
+=> Well?? What are you waiting for? I'm hungry!
 </code></pre>
 
 <p>Now let's see what happens when we create another person called theodore:</p>
