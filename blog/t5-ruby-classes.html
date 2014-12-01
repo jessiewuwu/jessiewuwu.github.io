@@ -19,19 +19,13 @@
   </div>
 
   <div id="middle_column">
-    <h1>Intro to Class  </h1>
+    <h1>Class and Instance Variables in Ruby </h1>
     <p class="date">Sunday, November 30, 2014</p>
-<!--
-  1. Intro - explanation of what classes are and the purpose
-  II. Example
-  III. Calling on Class
-  IV. Attributes
-  V. Conclusion
--->
+
     <p>In Ruby, creating a class allows you to apply methods to an object created by the class. Each time an object is created, it will do the same thing as the other objects with something called the instance method. For example, let's pretend that you are running a senior home where all three meals are provided and served to the elders living there. You can create a class Dining Room that looks at what each senior will want for their breakfast, lunch, and dinner prepared based on their preferences. </p>
     <p>So in this case, the object will be the senior for the class Meal with instance methods of breakfast, lunch, and dinner that takes in arguments of how they like their chicken prepared and spice level preference.</p>
 
-    <p class="codetext">
+    <pre><code>
 class DiningRoom
     def initialize(texture, spice)
       @texture = texture
@@ -58,13 +52,14 @@ puts "Hurry up, I don't have all day here!"
 puts esther.lunch
 puts "Are you tone-deaf? Do I have to repeat myself? Go get it!"
 puts esther.dinner
-puts "Well?? What are you waiting for? I'm hungry!"</p>
+puts "Well?? What are you waiting for? I'm hungry!"</code></pre>
 
 
 <p>You can see that texture and spice are now instance variables (denoted with @ before their name) so that we can use it for not only breakfast method, but all the methods in the class. Instance variables allow us to expect information from the arguments every time an object (the person) is created. It means that every time we add a person to Dining Room class, the computer will spit out their preferences so that you can prepare their meals accordingly.</p>
 
 <p>We call the method breakast on esther to see what she'd want for breakfast.</p>
-<p class="codetext"> =>I want to eat extra crispy deep fried chicken with a side of fried potatos, a little bit spicy .
+<pre><code>
+=>I want to eat extra crispy deep fried chicken with a side of fried potatos, a little bit spicy .
 =>Hurry up, I don't have all day here!
 
 =>I'm craving extra crispy deep fried chicken salad with tortilla soup, a little bit spicy.
@@ -72,10 +67,11 @@ puts "Well?? What are you waiting for? I'm hungry!"</p>
 
 =>Tonight I will have extra crispy deep fried chicken with some veggie fried rice, a little bit spicy .
 =>Well?? What are you waiting for? I'm hungry!
-</p>
+</code></pre>
 
 <p>Now let's see what happens when we create another person called theodore:</p>
-<p class="codetext">theodore = DiningRoom.new("grilled", "very spicy, like 1 to 5 (5 being the hottest), level 6 spicy")
+<pre><code>
+theodore = DiningRoom.new("grilled", "very spicy, like 1 to 5 (5 being the hottest), level 6 spicy")
 puts theodore.breakfast
 puts "Thanks sweetheart, and grab me a bottle of that Tabasco, why dontcha."
 puts theodore.lunch
@@ -83,13 +79,16 @@ puts "Don't forget about the Taptio hot sauce!"
 puts theodore.dinner
 puts "You know to bring extra sriracha right?"
 
-=>I want to eat grilled chicken with waffles and a side of fried potatos, very spicy, like 1 to 5 (5 being the hottest), level 6 spicy .
-=>Thanks sweetheart, and grab me a bottle of that Tabasco, why dontcha.
-=>I'm craving grilled chicken salad with tortilla soup, very spicy, like 1 to 5 (5 being the hottest), level 6 spicy.
-=>Don't forget about the Taptio hot sauce!
-=>Tonight I will have grilled chicken with some veggie fried rice, very spicy, like 1 to 5 (5 being the hottest), level 6 spicy .
-=>You know to bring extra sriracha right?
-</p>
+=> I want to eat grilled chicken with waffles and a side of fried potatos, very spicy, like 1 to 5
+(5 being the hottest), level 6 spicy .
+=> Thanks sweetheart, and grab me a bottle of that Tabasco, why dontcha.
+=> I'm craving grilled chicken salad with tortilla soup, very spicy, like 1 to 5 (5 being the hottest),
+level 6 spicy.
+=> Don't forget about the Taptio hot sauce!
+=> Tonight I will have grilled chicken with some veggie fried rice, very spicy, like 1 to 5 (5 being
+the hottest), level 6 spicy .
+=> You know to bring extra sriracha right?
+</code></pre>
 
 <p>So, here you see that the purpose of using a class method is when you create objects (in our case esther and theodore) and they all behave the same way (tell us how they want food prepared), thanks to the instance methods (breakfast, lunch, dinner) defined inside the class (DiningRoom).</p>
 

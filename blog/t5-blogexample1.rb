@@ -5,15 +5,15 @@ class DiningRoom
     end
 
     def breakfast
-      "I want to eat #{@texture} chicken with waffles and a side of fried potatos, #{@spice} ."
+      puts "I want to eat #{@texture} chicken with waffles and a side of fried potatos, #{@spice} ."
     end
 
     def lunch
-      "I'm craving #{@texture} chicken salad with tortilla soup, #{@spice}."
+      puts "I'm craving #{@texture} chicken salad with tortilla soup, #{@spice}."
     end
 
     def dinner
-      "Tonight I will have #{@texture} chicken with some veggie fried rice, #{@spice} ."
+      puts "Tonight I will have #{@texture} chicken with some veggie fried rice, #{@spice} ."
     end
 end
 

@@ -45,9 +45,24 @@ h1 {
   color: #efb146;
 }
 
+code {
+    font-family: monospace;
+}
+
+pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    color: #5B6166;
+    margin: 1em 0;
+    background-color: #E0E7EC;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
 p {
   font-size: 18px;
-  width: 1070px;
+  width: 870px;
   text-align: justify;
   margin-top: 5px;
 }
