@@ -22,8 +22,8 @@
     <h1>Class and Instance Variables in Ruby </h1>
     <p class="date">Sunday, November 30, 2014</p>
 
-    <p>In Ruby, creating a class allows you to apply methods to an object created by the class. Each time an object is created, it will do the same thing as the other objects with something called the instance method. For example, let's pretend that you are running a senior home where all three meals are provided and served to the elders living there. You can create a class DiningRoomPlan that looks at what each senior will want for their breakfast, lunch, and dinner prepared based on their preferences. </p>
-    <p>So in this case, the object will be the senior for the class DiningRoomPlan with instance methods of breakfast, lunch, and dinner that takes in arguments of how they like their chicken prepared (texture) and spice level preference (spice).</p>
+    <p>In Ruby, creating a class allows you to apply methods to an object. With instance methods, each time an object is created from the class, it will do the same thing as the other objects. For example, let's pretend that you are running a senior home where all three meals are provided and served to the elders living there. You can create a class <span class="courier">DiningRoomPlan</span> that looks at what each senior will want for their breakfast, lunch, and dinner prepared based on their preferences. </p>
+    <p>So in this case, the object will be the senior for the class <span class="courier">DiningRoomPlan</span>. The instance methods breakfast, lunch, and dinner let us know how they like their chicken prepared (<span class="courier">texture</span>) and spice level preference (<span class="courier">spice</span>). How do we know what the texture variable and spice variable are? It's given to us when that person is created aka it is part of the arguments when we create a new object with <span class="courier"><ClassName>.new</span></p>
 
     <pre><code>
 class DiningRoomPlan
@@ -44,21 +44,21 @@ class DiningRoomPlan
       puts "Tonight I will have #{@texture} chicken with some veggie fried rice, #{@spice} ."
     end
 end
+</code></pre>
 
-esther = DiningRoom.new("extra crispy deep fried", "a little bit spicy")
+
+<p>You can see that texture and spice are now instance variables (denoted with @ before their name) so that we can use it for not only <span class="courier">breakfast</span> method, but all the methods in the class. Instance variables allow us to expect information from the arguments every time an object (the person) is created. It means that every time we add a person to <span class="courier">DiningRoomPlan</span> class, the computer will spit out their preferences so that you can prepare their meals accordingly.</p>
+
+<p>We call the method <span class="courier">.breakast</span> on esther to see what <span class="courier">esther</span> would want for breakfast.</p>
+<pre><code>
+esther = DiningRoomPlan.new("extra crispy deep fried", "a little bit spicy")
 
 puts esther.breakfast
 puts "Hurry up, I don't have all day here!"
 puts esther.lunch
 puts "Are you tone-deaf? Do I have to repeat myself? Go get it!"
 puts esther.dinner
-puts "Well?? What are you waiting for? I'm hungry!"</code></pre>
-
-
-<p>You can see that texture and spice are now instance variables (denoted with @ before their name) so that we can use it for not only breakfast method, but all the methods in the class. Instance variables allow us to expect information from the arguments every time an object (the person) is created. It means that every time we add a person to DiningRoomPlan class, the computer will spit out their preferences so that you can prepare their meals accordingly.</p>
-
-<p>We call the method breakast on esther to see what she'd want for breakfast.</p>
-<pre><code>
+puts "Well?? What are you waiting for? I'm hungry!"
 => I want to eat extra crispy deep fried chicken with a side of fried potatos, a little bit spicy.
 => Hurry up, I don't have all day here!
 
@@ -69,7 +69,7 @@ puts "Well?? What are you waiting for? I'm hungry!"</code></pre>
 => Well?? What are you waiting for? I'm hungry!
 </code></pre>
 
-<p>Now let's see what happens when we create another person called theodore:</p>
+<p>Now let's see what happens when we create another person called <span class="courier">theodore</span>:</p>
 <pre><code>
 theodore = DiningRoom.new("grilled", "very spicy, like 1 to 5 (5 being the hottest), level 6 spicy")
 puts theodore.breakfast
@@ -90,7 +90,11 @@ the hottest), level 6 spicy .
 => You know to bring extra sriracha right?
 </code></pre>
 
-<p>So, here you see that the purpose of using a class method is when you create objects (in our case esther and theodore) and they all behave the same way (tell us how they want food prepared), thanks to the instance methods (breakfast, lunch, dinner) defined inside the class (DiningRoom).</p>
+<p>So, here you see that the purpose of using a class method is when you create objects (in our case <span class="courier">esther</span> and <span class="courier">theodore</span>) and they all behave the same way (tell us how they want food prepared), thanks to the instance methods (<span class="courier">breakfast, lunch, dinner</span>) defined inside the class (<span class="courier">DiningRoomPlan</span>).</p>
+
+<center><img src="../imgs/clapping.GIF" /></center>
+
+<h3>And now you know about classes! *clap clap*</h3>
 
 
 
