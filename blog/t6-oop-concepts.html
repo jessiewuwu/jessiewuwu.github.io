@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css" />
+   <link href="http://fonts.googleapis.com/css?family=Questrial" rel="stylesheet" type="text/css" />
+
+  <title>Jessie's Blog</title>
+</head>
+<body>
+
+  <div id="left_column">
+  <ul>
+    <a href="http://jessiewuwu.github.io/"><img class="logopic" src="../imgs/jessielogo.png" /></a>
+    <li><a href="http://jessiewuwu.github.io/">home</a></li>
+    <li><a href="#">about</a></li>
+    <li><a href="https://jessiewuwu.github.io/blog/index.html">archive</a></li>
+    <li><a href="mailto:jwu004@gmail.com">contact</a></li>
+  </ul>
+  </div>
+
+  <div id="middle_column">
+    <h1>Variable Scope: Global, Constant, Class, Instance, Local</h1>
+    <p class="date">Saturday, December 6, 2014</p>
+
+  <p>We are wrapping up Week 6 of Phase 0 where we've played around with scope. Scope defines where in a program a variable is accessible. There are five types of variable scope: global, constant, class, instance, and local. See below for more info:</p>
+
+  <h3>$Global Variables</h3>
+  <p>Global variables are prefixed with $. They are visible throughout the program, meaning it can be outside of methods and classes. Typically global variables are to be avoided. Because it is accessible throughout the program, if a class or method modifies the global variable, whatever other class or method that also uses that global variable will behave in an unexpected and undesirable way. It would then make debugging difficult because it'd may be challenging to figure out what modified the global variable and when. Typically we use already established global variables with single character names, for example $0 technically does something (not related to having zero money).</p>
+
+  <h3>CONSTANT Variables</h3>
+  <p>Constant variables are defined by being in all caps (CONSTANT) or having the first letter capitalized (Constant). Constant variables have values that are to remain constant and unchanged. However, it is possible to change the value but you will get a warning. It is like having an auntie who is supposedly 40 years old every year, she somehow mysteriously never ages.</p>
+
+  <p>Using irb in our console:</p>
+
+  <pre><code>
+    puts "me: How old are you, Auntie?"
+    puts "*silence*"
+    AGE = 40
+    puts "Auntie: I am #{AGE} years old."
+    puts "Dad: Really?? Weren't you #{AGE} five years ago?"
+    => me: How old are you, Auntie?
+    => *silence*
+    => Auntie: I am 40 years old.
+    => Dad: Really?? Weren't you 40, like five years ago?
+
+    AGE = AGE + 5
+    => warning: already initialized constant AGE
+    => warning: previous definition of AGE was here
+
+    puts "me: That means you're actually... #{AGE}!!"
+    puts "*Auntie storms out* "
+    => me: That means you're actually 45!!
+    => *Auntie storms out*
+  </code></pre>
+  <p>As you see, when you change the constant AGE by adding 5 (years), you get a warning sign saying you had previously given it a value of 40 and you shouldn't be changing it, but it went ahead and changed it to 45. It's kind of similar to getting a warning sign in your head "be careful, you're about to add 5 years to the age she just told you and reveal her real age, she's going to be pissed." So yeah, it's a good idea to let constants be constants.</p>
+
+  <h3>@@Class Variables</h3>
+  <p>Class variables are noted with @@ in front of the variable name. They can be used inside and outside of methods, which means it can also be inside classes. It is also required to initialize it. Why? If the class variable's value is modified in one stance, the new value will be used for the other instances as well. </p>
+
+  <p>Going into our console and running our ruby file: </p>
+
+  <pre><code>
+  class Party
+    @@party_year = 1999
+
+    def initialize(year)
+      @@party_year = year
+      puts "Let's party like it's #{@@party_year}!"
+    end
+  end
+
+  millennium = Party.new(2000)
+  puts "*cricket cricket*" #everyone was prolly anticipating a blackout
+  => Let's party like it's 2000!
+  => *cricket cricket*
+  </code></pre>
+  <p>So thinking about Prince's song "Party like it's 1999", we can set our @@party_year = 1999, since apparently that was THE year to party. By creating an initialize method with year, it means we can take the parameter year (given to us when we created an object from the class Party) and do something with that given year. In our case, we want to say the @@party_year is now the year we are inputting. We know @@party_year is updated from 1999 to 2000 because in our console, we see "Let's party like it's 2000!"</p>
+
+  <h3>@Instance Variables</h3>
+  <p>Instance variables start out with just one @. Instance variables and class variables may seem to do the same thing, but actually the main difference is the clas variable should be static, there is ony one copy of the variable that is shared with all the instances of the class. Instance variables on the other hand can have different values across different objects. In addition, unlike class variable, you can only use the instance variable inside instance methods. You can use it for different methods within the same class though. This means you can take one value that was computed from a method and use it for something else in a different method.</p>
+
+  <pre><code>
+  class Party
+    @@party_year = 1999
+
+    def initialize(year, birth_year)
+      @@party_year = year
+      @birth_year = birth_year
+      puts "Let's party like it's #{@@party_year}!"
+    end
+
+    def drinking_year
+      best_year = @birth_year + 21
+      puts "The best year was #{best_year} when I turned 21!"
+    end
+  end
+
+
+  genX = Party.new(2000, 1986)
+  genX.drinking_year
+  => Let's party like it's 2000!
+  => The best year was 2007 when I turned 21!
+</code></pre>
+<p>From here you see that we have initialized an instance variable called @birth_year, which is given to us as a parameter. We will need to use it later for the drinking_year method where we add 21 years to it to find your drinking_year. As you see, best_year doesn't have anything attached to its name. This means it is a local variable. See below for an explanation on local variables.</p>
+
+<h3>Local Variables</h3>
+<p>Local variables are in lowercase, don't have any special notations before it, but can have an underscore in between. The accessibility of local variables is only inside the method, they can't be used for anything else outside of that parent method. So here we see that best_year is a local variable for drinking_year because that's the only time we need that variable. </p>
+
+<figure>
+  <img src="https://33.media.tumblr.com/d47fa2cc2e871be812aeb35f895907b9/tumblr_ng772f8mCd1t0cscho1_400.gif"/>
+  <figcaption>I think I understand variable scope now, finally</figcaption></figure>
+  </div>
+
+  <div id="right_column">
+  <ul>
+       <li><a href="https://www.facebook.com/jessiewu123"> <img src="../imgs/facebookicon.png"/> </a> </li>
+    <li><a href="https://www.linkedin.com/in/wujessie"> <img src="../imgs/linkedinicon.png"/></a> </li>
+    <li><a href="https://twitter.com/jessie__wu"> <img src="../imgs/twittericon.png"/></a> </li>
+    <li><a href="https://github.com/jessiewuwu"> <img src="../imgs/github.png"/></a> </li>
+
+  </ul>
+  </div>
+
+
+
+</body>
+</html>
