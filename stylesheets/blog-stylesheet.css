@@ -61,6 +61,30 @@ pre {
     width: 870px;
 }
 
+pre.javascript {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    color: #5B6166;
+    margin: 1em 0;
+    background-color: #E6E0EC;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    width: 870px;
+}
+
+pre.ruby {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    color: #5B6166;
+    margin: 1em 0;
+    background-color: #FBD7D7;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    width: 870px;
+}
+
 p {
   font-size: 18px;
   width: 870px;
