@@ -1,0 +1,111 @@
+html {
+  background: url(../imgs/pineapples.jpg) center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.fancyj {
+  font-family: 'Londrina Outline', cursive;
+  font-size: 100px;
+  color: #3FBCAE;
+}
+
+.fancyr {
+  font-family: 'Londrina Outline', cursive;
+  font-size: 100px;
+  color: #EDC3DB;
+}
+
+.versus {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header {
+  text-align: center;
+  border: 4px solid black;
+  font-size: 20px;
+  margin: 20px 100px 0px 100px;
+  background: white;
+}
+
+.section {
+  clear: both;
+  padding: 0px;
+  margin: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/*#divElement{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+}​*/
+
+.column {
+  display: block;
+  float:left;
+  margin: 10px 0px 40px 10px;
+}
+
+
+.entry {
+  margin: 30px 0px 30px 20px;
+  padding-left: 0px;
+  width: 320px;
+  height: 280px;
+  background: rgb(249, 233, 147);
+}
+
+
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  padding: 10px 10px 0px 10px;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  padding: 0px 10px;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+pre #example {
+  font-family: 'Slabo 13px', serif;
+}
+
+article.javascript p.javascript_title {
+  font-size: 20px;
+  background-color: #3FBCAE;
+  margin: 0px;
+  font-weight: bold;
+}
+
+article p {
+  padding: 0px 10px;
+}
+
+article.ruby p.ruby_title {
+  font-size: 20px;
+  background-color: #EDC3DB;
+  margin: 0px;
+  font-weight: bold;
+}
+
+.syntax {
+  font-family: 'Londrina Outline', cursive;
+  font-size: 20px;
+  padding-left: 10px;
+  font-weight: bolder;
+}

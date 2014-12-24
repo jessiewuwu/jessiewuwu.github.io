@@ -1,0 +1,152 @@
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="cheatsheet.css">
+     <link href='http://fonts.googleapis.com/css?family=Changa+One|Slabo+13px|Roboto|Londrina+Outline' rel='stylesheet' type='text/css'>
+      <title>JavaScript vs Ruby</title>
+  </head>
+  <body>
+    <div class="header">
+      <span class="fancyj">JavaScript &nbsp;</span> <span class="versus">vs &nbsp;</span> <span class="fancyr">&nbsp; Ruby &nbsp;</span>
+      <h3>Looping Cheat Sheet</h3>
+      <p>by Sarah Ing + Jessie Wu</p>
+    </div>
+    <div class="section">
+      <div class="column 1">
+        <div class="entry 1">
+        <h1>Looping through each</h1>
+        <p>Example: given ["one", "two", "three"]</p>
+        <pre class="example"><code>
+  Output =>
+  one pineapple(s)
+  two pineapple(s)
+  three pineapple(s)
+        </code></pre>
+      </div>
+
+      <div class="entry 2">
+        <h1>For Loop</h1>
+        <p>Example: given numbers 0 through 10, find</br>
+         the odd numbers.</br>
+          <pre class="example"><code>
+  Output =>
+  1
+  3
+  5
+  7
+  9
+        </code></pre>
+        </p>
+      </div>
+      <div class="entry 3">
+      <h1>While Loops</h1>
+      <p>Example: given it's your birthday, get the even number of pina colada drinks (excluding 0 since no person can resist drinking 0 pina colada drink on their birthday).</p>
+      <pre class="example"><code>
+  Output =>
+  I can drink 2 pina colada drinks.
+  I can drink 4 pina colada drinks.
+  I can drink 6 pina colada drinks.
+  I can drink 8 pina colada drinks.
+  I can drink 10 pina colada drinks.
+      </code></pre>
+      </div>
+    </div>
+
+
+      <div class="column 2">
+        <div class="entry 1">
+        <article class="javascript">
+          <p class="javascript_title">JavaScript</p></br>
+          <span class="syntax">SYNTAX:</span>
+            <p>var array = ["one", "two", "three"]</br>
+            for (var i = 0; i < array.length; i++) {</br>
+            &nbsp;&nbsp; do something; </br>
+            }</br></br>
+          </p>
+          <p>var array = ["one", "two", "three"]</br>
+            for (var i = 0; i < array.length; i++) {</br>
+            &nbsp; &nbsp; console.log(array[i] + " pineapple(s)");</br>
+            }
+          </p>
+        </article>
+      </div>
+        <div class="entry 2">
+        <article class="javascript">
+          <p class="javascript_title">JavaScript</p></br>
+        <span class="syntax">SYNTAX:</span>
+        <p>  for (var i = 0; i < array.length; i++) {</br>
+            if (conditional statement) {</br>
+            &nbsp;&nbsp; do something;</br>
+          &nbsp; &nbsp; }</br>
+           }</br></br></p>
+          <p>var array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10] </br>
+          for (var i = 0; i < array.length; i++) {</br>
+          &nbsp; &nbsp; if (array[i] % 2 != 0) {</br>
+          &nbsp; &nbsp; console.log(array[i]);</br>
+          &nbsp; &nbsp; }</br>
+           }</br>
+        </p>
+    </article>
+      </div>
+      <div class="entry 3">
+       <article class="javascript">
+          <p class="javascript_title">JavaScript</p></br>
+          <span class="syntax">SYNTAX:</span>
+          <p>var counter = starting value</br>
+          while (true statement) { </br>
+          &nbsp; &nbsp; do something;</br>
+          &nbsp; &nbsp; counter increment;</br>
+          }</br></br></p>
+          <p>var number = 2;</br>
+          while (number <= 10) {</br>
+          &nbsp; &nbsp; console.log("I can drink " + number + " pina colada drinks.");</br>
+          &nbsp; &nbsp; number+=2;</br>
+          }</p>
+       </article>
+      </div>
+    </div>
+
+      <div class="column 3">
+        <div class="entry 1">
+        <article class="ruby">
+          <p class="ruby_title">Ruby</p></br>
+          <span class="syntax">SYNTAX:</span>
+          <p>array.each {|variable| do something} </br></br></br></br></br></p>
+          <p>array = ["one", "two", "three"]</br></br>
+          array.each {|number| puts number + " pineapple(s)"}
+          </p>
+        </article>
+      </div>
+      <div class="entry 2">
+        <article class="ruby">
+          <p class="ruby_title">Ruby</p></br>
+          <span class="syntax">SYNTAX:</span>
+          <p>for i in 0..n</br>
+            &nbsp; &nbsp; do something</br>
+            end</br></br></br></br></p>
+          <p>for i in 0..10 do</br>
+          &nbsp; &nbsp; puts i if i % 2 != 0</br>
+          end
+          </p>
+        </article>
+      </div>
+      <div class="entry 3">
+        <article class="ruby">
+          <p class="ruby_title">Ruby</p></br>
+          <span class="syntax">SYNTAX:</span>
+          <p>counter = starting value</br>
+            while(true statement)</br>
+            &nbsp; &nbsp; counter increment</br>
+            &nbsp; &nbsp; do something</br>
+            end</br></br></p>
+          <p>number = 2</br>
+          while number <= 10</br>
+          &nbsp; &nbsp; number += 2</br>
+          &nbsp; &nbsp; puts "I can drink " + number.to_s + " pina colada drinks."</br>
+          end</br>
+          </p>
+        </article>
+      </div>
+
+    </div>
+  </body>
+  </html>
