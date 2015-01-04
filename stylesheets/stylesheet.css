@@ -26,12 +26,16 @@ body {
   margin: 30px 300px 30px 300px;
 }
 
+a img {
+  width: 20px;
+}
+
 a:hover {
   background-color: #cae5ff;
   color: #efb146;
 }
 
-a: visited {
+a:visited {
   color: #cae5ff;
 }
 
