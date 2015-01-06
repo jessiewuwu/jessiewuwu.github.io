@@ -148,3 +148,7 @@ a:active {
 move the header bar underneath banner
 split up the pictures
 contrasting colors*/
+
+.devpage {
+  background-color: black;
+}
