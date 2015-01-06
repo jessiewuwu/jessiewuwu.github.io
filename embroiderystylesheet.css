@@ -1,5 +1,5 @@
 *{
-
+  font-family: "Questrial", sans-serif;
 }
 
 .pattern {
@@ -16,6 +16,12 @@
   font-family: 'Questrial', sans-serif;
   font-weight: bold;
   letter-spacing: 2px;
+  padding: 40px;
+}
+
+.year {
+  font-size: 30px;
+  color: slategrey;
   padding: 40px;
 }
 
