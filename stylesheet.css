@@ -130,12 +130,12 @@ a:link {
 }
 
 a:visited {
-  color: grey;
+  color: slategrey;
   text-decoration: none;
 }
 
 a:hover {
-  color: slategrey;
+  color: lightyellow;
   text-decoration: none;
 }
 
@@ -151,4 +151,23 @@ contrasting colors*/
 
 .devpage {
   background-color: black;
+}
+
+/*blog index*/
+
+.blog-index {
+  background-color: rgb(83, 218, 209);
+  width: 100%;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.blog-index .blogposts {
+  text-align: justify;
+  padding: 30px 150px 30px 200px;
+  font-size: 20px;
+}
+
+.paddedList {
+  line-height: 1.5em;
 }

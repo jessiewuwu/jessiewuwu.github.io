@@ -1,3 +1,7 @@
+* {
+  font-family: "Questrial", sans-serif;
+}
+
 html {
   background: url(../imgs/dotscopy.jpg) center center fixed;
   -webkit-background-size: cover;
