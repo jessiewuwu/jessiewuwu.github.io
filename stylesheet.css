@@ -2,7 +2,7 @@
 
 * {
   font-family: "Questrial", sans-serif;
-  color: white;
+/*  color: white;*/
 }
 
 .space {
@@ -46,6 +46,7 @@
   height: 500px;
   width: 100%;
   text-align: center;
+  color: white;
 }
 
 .hi {
@@ -59,6 +60,7 @@
 /*  float: right;*/
   text-shadow: 1px 1px 1px #bcbcbc;
   letter-spacing: 2px;
+  color: white;
 }
 
 .blurb {
@@ -68,6 +70,7 @@
  /* padding-right: 500px;*/
   text-align: justify;
   letter-spacing: 1px;
+  color: white;
 }
 
 .pix {
@@ -83,6 +86,7 @@
   height: 600px;
   width: 100%;
   text-align: center;
+  color: white;
 }
 
 .images {
@@ -103,6 +107,7 @@
   height: 500px;
   width: 100%;
   text-align: center;
+  color: white;
 }
 
 .contact {
@@ -121,6 +126,7 @@ li.copyright {
   position: relative;
   bottom: -8px;
   display: inline;
+  color: white;
 }
 
 
@@ -160,12 +166,14 @@ contrasting colors*/
   width: 100%;
   text-align: center;
   padding-bottom: 80px;
+  color: white;
 }
 
 .blog-index .blogposts {
   text-align: justify;
-  padding: 30px 150px 30px 200px;
+  padding: 30px 150px 30px 150px;
   font-size: 20px;
+  color: #404040;
 }
 
 .paddedList {
