@@ -71,6 +71,7 @@
   text-align: justify;
   letter-spacing: 1px;
   color: white;
+  line-height: 1.5em;
 }
 
 .pix {
@@ -87,6 +88,10 @@
   width: 100%;
   text-align: center;
   color: white;
+}
+
+.projects .blurb {
+  padding-left: 500px;
 }
 
 .images {
@@ -175,6 +180,7 @@ contrasting colors*/
   font-size: 20px;
   color: #404040;
 }
+
 
 .paddedList {
   line-height: 1.5em;
