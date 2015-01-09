@@ -19,6 +19,9 @@
 /*  display: inline;*/
 }
 
+.logo {
+  display: inline;
+}
 .header ul li{
   display: inline;
 }
@@ -28,17 +31,33 @@
   width: 100%;
   text-align: justify;
   padding: 80px 150px 30px 150px;
-  font-size: 18px;
+  font-size: 16px;
   color: #404040;
   padding-bottom: 80px;
+  line-height: 1.25em;
+  letter-spacing: 0.5px;
 }
 
-.blog-image {
+img {
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
 
+h1 {
+  color: slategrey;
+}
+
+h2 {
+  padding-top: 15px;
+  line-height: 0.3em;
+  color: slategrey;
+}
+
+.date {
+  font-size: 13px;
+  font-style: italic;
+}
 a:link {
   text-decoration: none;
   color: lightblue;
