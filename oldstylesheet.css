@@ -51,10 +51,12 @@ li.copyright {
 a:hover {
   background-color: #cae5ff;
   color: #efb146;
+  text-decoration: none;
 }
 
 a: visited {
   color: #cae5ff;
+  text-decoration: none;
 }
 
 a:link {
@@ -63,6 +65,7 @@ a:link {
 
 a {
   color: #5B6166;
+  text-decoration: none;
 }
 
 h1 {
