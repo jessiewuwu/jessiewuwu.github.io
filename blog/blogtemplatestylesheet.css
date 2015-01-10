@@ -22,6 +22,7 @@
 .logo {
   display: inline;
 }
+
 .header ul li{
   display: inline;
 }
@@ -45,6 +46,7 @@ img {
 
 h1 {
   color: slategrey;
+  line-height: 1em;
 }
 
 h2 {
