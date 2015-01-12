@@ -41,7 +41,7 @@
   text-align: center;
 }
 
-.about {
+.welcome {
   background-color: rgb(103, 194, 202);
   height: 500px;
   width: 100%;
@@ -65,13 +65,21 @@
 
 .blurb {
   font-size: 15px;
-  padding-left: 400px;
-  padding-right: 400px;
- /* padding-right: 500px;*/
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
   text-align: justify;
   letter-spacing: 1px;
   color: white;
   line-height: 1.5em;
+}
+
+.about {
+  background-color: rgb(112, 205, 153);
+  height: 870px;
+  width: 100%;
+  text-align: center;
+  color: white;
 }
 
 .pix {
@@ -91,7 +99,7 @@
 }
 
 .projects .blurb {
-  margin-left: auto;
+  margin-left: 400px;
   margin-right: auto;
   display: block;
 
@@ -102,7 +110,7 @@
 }
 
 .selfimage {
-  padding: 130px 70px 0px;
+  padding: 60px 70px 0px;
   float: left;
 }
 
